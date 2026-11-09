@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Planificateur de repas</title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="theme-color" content="#0f766e">
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin:0;
+      padding:20px;
+      background:#f5f7fa;
+    }
+
+    h1{
+      color:#0f766e;
+    }
+
+    .card{
+      background:white;
+      border-radius:10px;
+      padding:15px;
+      margin-bottom:15px;
+      box-shadow:0 2px 4px rgba(0,0,0,.1);
+    }
+
+    button{
+      background:#0f766e;
+      color:white;
+      border:none;
+      padding:10px 15px;
+      border-radius:8px;
+    }
+
+    input{
+      width:100%;
+      padding:10px;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🍽️ Mes repas</h1>
+
+<div class="card">
+  <h2>Ajouter un repas</h2>
+
+  <input id="meal" placeholder="Ex: Tacos">
+
+  <button onclick="
