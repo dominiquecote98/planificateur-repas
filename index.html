@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes repas</title>
 
-  <title>Planificateur de repas</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f766e">
 
-  <link rel="manifest" href="manifest.json">
+<style>
 
-  <meta name="theme-color" content="#0f766e">
+:root{
+--primary:#0f766e;
+--background:#f5f7fa;
+--card:#ffffff;
+--text:#222;
+}
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin:0;
-      padding:20px;
-      background:#f5f7fa;
-    }
+*{
+box-sizing:border-box;
+}
 
-    h1{
-      color:#0f766e;
-    }
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:var(--background);
+color:var(--text);
+}
 
-    .card{
-      background:white;
-      border-radius:10px;
-      padding:15px;
-      margin-bottom:15px;
-      box-shadow:0 2px 4px rgba(0,0,0,.1);
-    }
+header{
+background:var(--primary);
+color:white;
+padding:18px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+}
 
-    button{
-      background:#0f766e;
-      color:white;
-      border:none;
-      padding:10px 15px;
-      border-radius:8px;
-    }
+.tabs{
+display:flex;
+background:white;
+position:sticky;
+top:0;
+z-index:100;
+}
 
-    input{
-      width:100%;
-      padding:10px;
-      margin-bottom:10px;
-    }
-  </style>
-</head>
-<body>
-
-<h1>🍽️ Mes repas</h1>
-
-<div class="card">
-  <h2>Ajouter un repas</h2>
-
-  <input id="meal" placeholder="Ex: Tacos">
-
-  <button onclick="
+.tab{
+flex:1;
+padding:12px;
+border:none;
+background:white;
+font-size:16px;
+font-weight:600;
